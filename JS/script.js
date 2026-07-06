@@ -27,7 +27,7 @@ function showSectionFun(sectionId) {
 // countdown
 // التاريخ المستهدف
 // تعديل ساعة المعرض
-const eventDate = new Date("2025-09-24T10:00:00").getTime()
+const eventDate = new Date("2026-09-30T10:00:00").getTime()
 // يحسب الوقت الحالي وموعد الحدث
 const timer = setInterval(() => {
   const now = new Date().getTime()
@@ -78,3 +78,63 @@ function confirmationMessage(){
         confirmation.textContent = "Your message has been received , Thank You "
     }
 }
+
+
+
+// =========================
+// GCE 2026 Coming Soon Cover
+// =========================
+
+// موعد فتح المشاركين
+// للتجربة خليه تاريخ قديم
+const gceCoverDate = eventDate;
+
+const gceComingCover = document.getElementById("gceComingCover");
+
+const coverDays = document.getElementById("coverDays");
+const coverHours = document.getElementById("coverHours");
+const coverMinutes = document.getElementById("coverMinutes");
+const coverSeconds = document.getElementById("coverSeconds");
+
+function updateGceComingSoonCover() {
+  if (!gceComingCover || !coverDays || !coverHours || !coverMinutes || !coverSeconds) {
+    return;
+  }
+
+  const now = new Date().getTime();
+  const diff = gceCoverDate - now;
+
+  // إذا التاريخ غلط
+  if (isNaN(diff)) {
+    console.log("Invalid event date");
+    return;
+  }
+
+  // إذا الموعد خلص، اخفي الغطاء واظهر المشاركين
+  if (diff <= 0) {
+    gceComingCover.style.display = "none";
+
+    const page3 = document.getElementById("page3");
+    if (page3) {
+      page3.classList.remove("coming-mode");
+      page3.classList.add("event-started");
+    }
+
+
+    clearInterval(gceCoverTimer);
+    return;
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  coverDays.textContent = days;
+  coverHours.textContent = hours;
+  coverMinutes.textContent = minutes;
+  coverSeconds.textContent = seconds;
+}
+
+const gceCoverTimer = setInterval(updateGceComingSoonCover, 1000);
+updateGceComingSoonCover();
