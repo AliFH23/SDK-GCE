@@ -744,7 +744,7 @@ body {
 /* حركة عند تغيير الرقم */
 .time-box.animate {
   transform: scale(1.2);  
-  background: #eb4cbb;
+  background: #d4d4d4;
   color: #2babe2; 
 }
 #countdownMessage {
