@@ -30,7 +30,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #dc26a5, #84005c);
+    background: linear-gradient(to bottom, #929497, #52484f); /* Ali*/
     color: white;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #b81c88;
+    background-color: #929497;
 }
 
 
@@ -257,7 +257,7 @@ body {
     text-align: right;
 }
 .row .text h1 {
-    color: #bc057c;
+    color: #929497;
 }
 .row .image {
     flex: 0.4;
@@ -291,7 +291,7 @@ body {
 
 #head-name {
     font-size: 30px;
-    color: #bc057c;
+    color: #929497; /* Ali */
 }
 
 .domain-name {
@@ -733,7 +733,7 @@ body {
   margin-bottom: 5px;       
   font-size: 25px;
   font-weight: bold;
-  color: #d6336c;
+  color: #9296a6; /* Ali */
 }
 .time-box p {
   margin: 0;
@@ -958,7 +958,7 @@ body {
     padding: 6px 0;
     margin: 8px 0 0 0;
     border-radius: 10px;
-    background: rgba(188,5,124,0.98);            /* matches your navbar color */
+    background: #929497;   /*Ali*/         /* matches your navbar color */
     box-shadow: 0 10px 20px rgba(0,0,0,.25);
     display: block;
     opacity: 0;                                   /* hidden by default */
@@ -993,7 +993,7 @@ body {
 }
 
 #footer {
-    background-color: #b81c88;
+    background-color: #929497; /* Ali */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1025,7 +1025,7 @@ body {
 
 #social-icon svg
 {
-    color: #2596be;
+    color: #ffffff;/* Ali */ 
     width: 25px;
     height: 25px;
     gap: 10px;
@@ -1139,14 +1139,14 @@ top: 10px;
 
 .gce-coming-box h1 {
     font-size: clamp(38px, 5vw, 64px);
-    color: #b81c88;
+    color: #929297; /* Ali */
     margin-bottom: 12px;
     letter-spacing: 3px;
     line-height: 1.15;
 }
 
 .gce-coming-box p {
-    color: #b81c88;
+    color: #929297; /* Ali */
     font-size: 16px;
     margin-bottom: 22px;
 }
@@ -1165,17 +1165,17 @@ top: 10px;
     border-radius: 15px;
 
     background: rgba(255, 255, 255, 0.35);
-    border: 1px solid rgba(188, 5, 124, 0.45);
+    border: 1px solid rgba(150, 150, 150, 0.45);
 }
 
 .gce-soon-countdown strong {
     display: block;
-    color: #b81c88;
+    color: #929297; /* Ali */
     font-size: 24px;
 }
 
 .gce-soon-countdown small {
-    color: #b81c88;
+    color: #929297; /* Ali */
     font-size: 11px;
 }
 
