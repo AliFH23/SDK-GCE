@@ -30,7 +30,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #929497, #52484f); /* Ali*/
+    background: linear-gradient(to bottom, #1C2541, #0B132B); /* Ali*/
     color: white;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #929497;
+    background-color: #0B132B;
 }
 
 
@@ -94,7 +94,7 @@ body {
 
 #nav ul li a:hover {
     padding: 10px;
-    background: #2babe2;
+    background: #FF8C00;
     border-radius: 5px;
 
 }
@@ -162,16 +162,16 @@ body {
     cursor: pointer;
     border-radius: 20px;
     border: none;
-    background-color: #2babe2;
+    background-color: #FF8C00;
     transition: all 0.5s;
     font-weight: bold;
-    color: black;
+    color: #0B132B;
     
 
 }
 #enter-btn:hover{
-    color: #2596be ;
-    background-color: rgb(0, 0, 0);
+    color: #0B132B ;
+    background-color:#00D8F6;
     padding: 20px 70px;
     font-weight: bold
 }
@@ -257,7 +257,7 @@ body {
     text-align: right;
 }
 .row .text h1 {
-    color: #929497;
+    color: #1F4E99;
 }
 .row .image {
     flex: 0.4;
@@ -275,7 +275,7 @@ body {
     margin: 20px auto;
     height:0px;
     border-radius: 2px;
-    color: #2babe2;
+    color: #1C2541;
     border: 2px solid currentColor;
     width: 80%;
 }
@@ -291,7 +291,7 @@ body {
 
 #head-name {
     font-size: 30px;
-    color: #929497; /* Ali */
+    color: #1F4E99; /* Ali */
 }
 
 .domain-name {
@@ -335,7 +335,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background: #fff;
+    background: #F4F5F8;
     text-align: center;
     padding: 15px;
     transition: transform 0.3s;
@@ -346,10 +346,11 @@ body {
 }
 .card-1 h3 {
     font-size: 15px;
+    color: #FF8C00;
 }
 .card-1 p {
     font-weight: bold;
-    color:#2babe2;
+    color:#FF8C00;
 
 }
 .card-1 img {
@@ -691,68 +692,104 @@ body {
     opacity: 1;
 }
 /* countdown */
-#countdown{
-  display: inline-block;
-  text-align: center;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px #2e2359;
-  width: 485px;
-  margin: auto;
-  margin-top: 100px;
+/* الحاوية الرئيسية للعداد */
+#countdown {
+    display: inline-block;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    /* ظل كحلي متناسق من الباليت */
+    box-shadow: 0 8px 24px rgba(28, 37, 65, 0.4); 
+    width: 485px;
+    margin: auto;
+    margin-top: 100px;
+    /* خلفية بيضاء مائلة للرمادي من الباليت لبروز العداد */
+    background: #F4F5F8; 
+}
 
+/* عنوان العداد */
+#countdown h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* كحلي داكن من الباليت */
+    color: #0B132B; 
 }
-#countdown h2{
-  margin-bottom: 40px; 
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
+
+/* حاوية صناديق الوقت */
+#countdown-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
-#countdown-box{
-  display: flex;       
-  justify-content: center; 
-  gap: 20px;                
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
+
+/* صناديق الوقت (كروت الأرقام) */
 .time-box {
-  width: 80px;
-  height: auto;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 8px 15px rgba(31, 57, 129, 0.2);
-  min-width: 30px;
-  text-align: center;       
+    width: 80px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    /* خلفية داكنة للأرقام (كحلي متوسط) */
+    background: #1C2541; 
+    /* ظل ناعم */
+    box-shadow: 0 8px 15px rgba(11, 19, 43, 0.2);
+    min-width: 30px;
+    text-align: center;
+    transition: transform 0.3s ease; /* تأثير هوفر ناعم */
 }
-.time-box:hover{
-  /* تكبير ودوران  */
-  transform: scale(1.15) rotate(5deg);
+
+/* تأثير الهوفر على صناديق الوقت */
+.time-box:hover {
+    /* تكبير ودوران خفيف */
+    transform: scale(1.1) rotate(2deg);
 }
+
+/* الأرقام داخل صناديق الوقت */
 .time-box span {
-  display: block;    
-  margin-bottom: 5px;       
-  font-size: 25px;
-  font-weight: bold;
-  color: #9296a6; /* Ali */
+    display: block;
+    margin-bottom: 5px;
+    font-size: 35px; /* تكبير الأرقام */
+    font-weight: bold;
+    /* سماوي تركواز ليبرز الرقم (نيون) */
+    color: #00D8F6; 
 }
+
+/* نصوص الوقت (Days, Hours...) */
 .time-box p {
-  margin: 0;
-  font-size: 10px;
-  font-weight: bold;
-  color: #555;
+    margin: 0;
+    font-size: 11px; /* تكبير بسيط للنص */
+    font-weight: bold;
+    /* أبيض مائل للرمادي ليكون واضحاً ومقروءاً فوق الداكن */
+    color: #F4F5F8; 
+    text-transform: uppercase;
 }
+
 /* حركة عند تغيير الرقم */
 .time-box.animate {
-  transform: scale(1.2);  
-  background: #d4d4d4;
-  color: #2babe2; 
+    transform: scale(1.15);
+    /* لون الهوفر (أزرق ملكي) */
+    background: #1F4E99; 
+    /* لون الأرقام وقت الهوفر (أبيض) */
+    color: #F4F5F8; 
 }
+
+/* رسالة انتهاء العد التنازلي */
 #countdownMessage {
-  margin-top: 30px;
-  font-size: 25px;
-  font-weight: bold;
-  color: #169a93;
-  animation: fadeIn 1.5s ease forwards;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    /* سماوي تركواز واضح */
+    color: #00D8F6; 
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* حركة التلاشيfadeIn */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* contact */
@@ -958,7 +995,7 @@ body {
     padding: 6px 0;
     margin: 8px 0 0 0;
     border-radius: 10px;
-    background: #929497;   /*Ali*/         /* matches your navbar color */
+    background: #0B132B;   /*Ali*/         /* matches your navbar color */
     box-shadow: 0 10px 20px rgba(0,0,0,.25);
     display: block;
     opacity: 0;                                   /* hidden by default */
@@ -975,7 +1012,7 @@ body {
     white-space: nowrap;
 }
 #nav .dropdown li a:hover {
-  background: rgba(21,120,186,0.85);           /* your existing hover color family */
+  background: #FF8C00;           /* your existing hover color family */
 }
 
 /* show on hover (desktop) */
@@ -993,7 +1030,7 @@ body {
 }
 
 #footer {
-    background-color: #929497; /* Ali */
+    background-color: #0B132B; /* Ali */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1059,7 +1096,7 @@ body {
 {
 text-decoration: none;
 color: white;
-background-color: #1E76BA;
+background-color: #FF8C00;
 border-radius: 10px;
 padding: 4px 10px;
 width: 120px;
@@ -1103,24 +1140,31 @@ top: 10px;
     justify-content: center;
 
     background:
-        radial-gradient(circle at top left, rgba(43, 171, 226, 0.28), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(188, 5, 124, 0.28), transparent 35%),
-        rgba(112, 112, 112, 0.94);
+  radial-gradient(circle at top left, rgba(0, 216, 246, 0.25), transparent 40%),
+  radial-gradient(circle at bottom right, rgba(31, 78, 153, 0.35), transparent 40%),
+  rgba(11, 19, 43, 0.88);
 
-    backdrop-filter: blur(12px);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
     padding: 40px 20px;
 }
 
 /* الصندوق */
+/* الصندوق الرئيسي */
 .gce-coming-box {
     width: min(90%, 480px);
     text-align: center;
     padding: 28px 22px;
     border-radius: 24px;
 
-    background: rgb(255, 255, 255);
-    border: 1px solid rgba(43, 171, 226, 0.4);
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+    /* خلفية بيضاء نقية */
+    background: #FFFFFF; 
+
+    /* إطار باللون السماوي من الباليت بحجم 40% شفوفية */
+    border: 1px solid rgba(0, 216, 246, 0.4); 
+
+    /* الظلال الكحلية الداكنة المتناسقة مع خلفية الصفحة */
+    box-shadow: 0 18px 45px rgba(11, 19, 43, 0.35);
 }
 
 .gce-coming-box span {
@@ -1129,8 +1173,8 @@ top: 10px;
     padding: 7px 16px;
     border-radius: 999px;
 
-    color: #ffffff;
-    background: #1E76BA;
+    color: #F4F5F8;
+    background: #1F4E99;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: bold;
@@ -1139,14 +1183,14 @@ top: 10px;
 
 .gce-coming-box h1 {
     font-size: clamp(38px, 5vw, 64px);
-    color: #929297; /* Ali */
+    color: #0B132B; /* Ali */
     margin-bottom: 12px;
     letter-spacing: 3px;
     line-height: 1.15;
 }
 
 .gce-coming-box p {
-    color: #929297; /* Ali */
+    color: #1C2541; /* Ali */
     font-size: 16px;
     margin-bottom: 22px;
 }
@@ -1164,19 +1208,25 @@ top: 10px;
     padding: 10px 8px;
     border-radius: 15px;
 
-    background: rgba(255, 255, 255, 0.35);
-    border: 1px solid rgba(150, 150, 150, 0.45);
+    background: #0B132B;
+    border: 1px solid #00D8F6;
+    box-shadow: 0 4px 14px rgba(0, 216, 246, 0.2); /* إضافة ظلال نيون خفيفة لتبرز الصناديق */
 }
 
+/* أرقام العداد */
 .gce-soon-countdown strong {
     display: block;
-    color: #929297; /* Ali */
+    color: #00D8F6; /* سماوي تركواز مشرق ليبرز الرقم تماماً */
     font-size: 24px;
+    font-weight: bold;
 }
 
+/* نصوص الوقت (Days, Hours...) */
 .gce-soon-countdown small {
-    color: #929297; /* Ali */
+    color: #F4F5F8; /* أبيض مائل للرمادي الفاتح ليصبح واضحاً ومقروءاً */
     font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* لما ييجي موعد الإيفنت */

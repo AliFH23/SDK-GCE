@@ -27,7 +27,7 @@ function showSectionFun(sectionId) {
 // countdown
 // التاريخ المستهدف
 // تعديل ساعة المعرض
-const eventDate = new Date("2026-08-17T10:00:00").getTime()
+const eventDate = new Date("2026-09-17T10:00:00").getTime()
 // يحسب الوقت الحالي وموعد الحدث
 const timer = setInterval(() => {
   const now = new Date().getTime()
