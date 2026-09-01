@@ -239,6 +239,7 @@ body {
 #page2 {
     width: 100%;
     padding: 100px 100px;
+    color: #0B132B;
 }
 
 .row {
@@ -257,7 +258,31 @@ body {
     text-align: right;
 }
 .row .text h1 {
-    color: #1F4E99;
+    color: #1E3ABA;
+}
+.row .text p {
+    color: #0B132B; 
+    line-height: 1.8;
+}
+.row .text ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.row .text ul li {
+    color: #0B132B; 
+    position: relative;
+    padding-right: 20px;
+}
+.row .text ul li::before {
+    content: "•";
+    color: #1E3ABA; 
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    line-height: 1;
 }
 .row .image {
     flex: 0.4;
@@ -275,7 +300,7 @@ body {
     margin: 20px auto;
     height:0px;
     border-radius: 2px;
-    color: #1C2541;
+    color: #0B132B;
     border: 2px solid currentColor;
     width: 80%;
 }
@@ -291,13 +316,14 @@ body {
 
 #head-name {
     font-size: 30px;
-    color: #1F4E99; /* Ali */
+    color: #1E3ABA; /* Ali */
 }
 
 .domain-name {
     text-align: center;
     display: flex;
     gap: 10px;
+    color: #0B132B;
 
 }
 
@@ -308,10 +334,12 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    width: 900px;
+    width: fit-content;
+    max-width: 1100px;
     padding: 50px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: 0 auto;
 }
 
 
@@ -328,30 +356,56 @@ body {
 }
 #whisper-icon svg {
     width: 60px;
+    
+    
 }
 
 .card-1 {
     width: 220px;
+    height: 280px;
     border: 1px solid #ddd;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background: #F4F5F8;
+    background: #F2F4F7;
     text-align: center;
     padding: 15px;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 .card-1:hover {
     transform: translateY(-6px);
 }
 .card-1 h3 {
-    font-size: 15px;
-    color: #FF8C00;
+    display: inline-block;
+    color: #FF8A00;
+    background: rgba(255, 138, 0, 0.08);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12.5px;
+    font-weight: 600;
+    margin: 6px 0 0;
 }
+
 .card-1 p {
     font-weight: bold;
-    color:#FF8C00;
+    color: #0B132B;
+    font-size: 17px;
+    margin: 0 0 4px;
+}
 
+.card-1 h5 {
+    display: inline-block;
+    color: #1E3ABA;
+    background: rgba(30, 58, 186, 0.08);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 6px 0 0;
 }
 .card-1 img {
     width: 120px;
@@ -697,98 +751,82 @@ body {
     display: inline-block;
     text-align: center;
     padding: 40px;
-    border-radius: 20px;
-    /* ظل كحلي متناسق من الباليت */
-    box-shadow: 0 8px 24px rgba(28, 37, 65, 0.4); 
+    border-radius: 24px;
     width: 485px;
-    margin: auto;
-    margin-top: 100px;
-    /* خلفية بيضاء مائلة للرمادي من الباليت لبروز العداد */
-    background: #F4F5F8; 
+    margin: 100px auto auto;
+    background: #FFFFFF; 
+    border: 1px solid rgba(37, 229, 235, 0.3);
+    box-shadow: 0 20px 40px rgba(11, 19, 43, 0.35);
 }
 
-/* عنوان العداد */
 #countdown h2 {
-    margin-bottom: 40px;
-    font-size: 30px;
-    font-weight: bold;
+    margin-bottom: 35px; 
+    font-size: 28px;
+    font-weight: 800;
     text-transform: uppercase;
-    /* كحلي داكن من الباليت */
+    letter-spacing: 2px;
     color: #0B132B; 
 }
 
-/* حاوية صناديق الوقت */
 #countdown-box {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: flex;       
+    justify-content: center; 
+    gap: 16px;                
     margin-top: 20px;
     flex-wrap: wrap;
 }
 
-/* صناديق الوقت (كروت الأرقام) */
 .time-box {
-    width: 80px;
-    height: auto;
-    padding: 20px;
-    border-radius: 20px;
-    /* خلفية داكنة للأرقام (كحلي متوسط) */
-    background: #1C2541; 
-    /* ظل ناعم */
-    box-shadow: 0 8px 15px rgba(11, 19, 43, 0.2);
-    min-width: 30px;
-    text-align: center;
-    transition: transform 0.3s ease; /* تأثير هوفر ناعم */
+    width: 85px;
+    padding: 18px 10px;
+    border-radius: 16px;
+    text-align: center; 
+    background: #0B132B; 
+    border: 1px solid #25E5EB; 
+    box-shadow: 0 8px 20px rgba(11, 19, 43, 0.25);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* تأثير الهوفر على صناديق الوقت */
 .time-box:hover {
-    /* تكبير ودوران خفيف */
-    transform: scale(1.1) rotate(2deg);
+    transform: translateY(-5px) scale(1.05);
+    border-color: #FF8A00; 
+    box-shadow: 0 12px 25px rgba(255, 138, 0, 0.25);
 }
 
-/* الأرقام داخل صناديق الوقت */
 .time-box span {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 35px; /* تكبير الأرقام */
-    font-weight: bold;
-    /* سماوي تركواز ليبرز الرقم (نيون) */
-    color: #00D8F6; 
+    display: block;    
+    margin-bottom: 4px;       
+    font-size: 32px;
+    font-weight: 700;
+    color: #25E5EB; 
+    line-height: 1;
 }
 
-/* نصوص الوقت (Days, Hours...) */
 .time-box p {
     margin: 0;
-    font-size: 11px; /* تكبير بسيط للنص */
-    font-weight: bold;
-    /* أبيض مائل للرمادي ليكون واضحاً ومقروءاً فوق الداكن */
-    color: #F4F5F8; 
+    font-size: 11px;
+    font-weight: 600;
+    color: #F2F4F7; 
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* حركة عند تغيير الرقم */
 .time-box.animate {
-    transform: scale(1.15);
-    /* لون الهوفر (أزرق ملكي) */
-    background: #1F4E99; 
-    /* لون الأرقام وقت الهوفر (أبيض) */
-    color: #F4F5F8; 
+    transform: scale(1.1);
+    background: #1E3ABA;
+    border-color: #FF8A00;
 }
 
-/* رسالة انتهاء العد التنازلي */
 #countdownMessage {
-    margin-top: 30px;
-    font-size: 25px;
-    font-weight: bold;
-    /* سماوي تركواز واضح */
-    color: #00D8F6; 
-    animation: fadeIn 1.5s ease forwards;
+    margin-top: 28px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FF8A00;
+    animation: fadeIn 1.2s ease forwards;
 }
 
-/* حركة التلاشيfadeIn */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
+    from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
@@ -857,30 +895,57 @@ body {
 
 
 /* Register section */
+/* Register section */
 #Register{
     padding: 60px 20px;
     margin: 50px auto;
     width: 600px;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    text-align: center;
+    background: #F2F4F7;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
+
+/* شريط لوني فوق الكارد */
+#Register::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 5px;
+    /* background: linear-gradient(90deg, #1E3ABA, #25E5EB, #FF8A00); */
+}
+
 #Register h2{
     font-size: 25px;
     font-weight: bold;
+    color: #FF8A00;
     margin-bottom: 30px;
 }
 #Register img{
     width: 250px;
     height: auto;
-    border: 2px solid ;
+    border: 2px solid #E1E7F8;
     border-radius: 15px;
     padding: 8px;
     margin-bottom: 20px;
+    box-shadow: 0 6px 18px rgba(30, 58, 186, 0.12);
+    transition: transform 0.3s ease;
+}
+#Register img:hover {
+    transform: scale(1.03);
 }
 #Register p{
     font-size: 20px;
     font-weight: bold;
+    color: #0B132B;
     margin: 10px 0;
+}
+#Register p:last-of-type {
+    color: #1E3ABA;
 }
 
 #all-contact
@@ -931,6 +996,7 @@ body {
 {
     width: 35px;
     height: 35px;
+    
 }
 
 
@@ -1129,71 +1195,7 @@ top: 10px;
     position: relative;
 }
 
-/* الغطاء */
-.gce-coming-cover {
-    position: absolute;
-    inset: 0;
-    z-index: 50;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background:
-  radial-gradient(circle at top left, rgba(0, 216, 246, 0.25), transparent 40%),
-  radial-gradient(circle at bottom right, rgba(31, 78, 153, 0.35), transparent 40%),
-  rgba(11, 19, 43, 0.88);
-
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
-    padding: 40px 20px;
-}
-
-/* الصندوق */
-/* الصندوق الرئيسي */
-.gce-coming-box {
-    width: min(90%, 480px);
-    text-align: center;
-    padding: 28px 22px;
-    border-radius: 24px;
-
-    /* خلفية بيضاء نقية */
-    background: #FFFFFF; 
-
-    /* إطار باللون السماوي من الباليت بحجم 40% شفوفية */
-    border: 1px solid rgba(0, 216, 246, 0.4); 
-
-    /* الظلال الكحلية الداكنة المتناسقة مع خلفية الصفحة */
-    box-shadow: 0 18px 45px rgba(11, 19, 43, 0.35);
-}
-
-.gce-coming-box span {
-    display: inline-block;
-    margin-bottom: 12px;
-    padding: 7px 16px;
-    border-radius: 999px;
-
-    color: #F4F5F8;
-    background: #1F4E99;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 13px;
-}
-
-.gce-coming-box h1 {
-    font-size: clamp(38px, 5vw, 64px);
-    color: #0B132B; /* Ali */
-    margin-bottom: 12px;
-    letter-spacing: 3px;
-    line-height: 1.15;
-}
-
-.gce-coming-box p {
-    color: #1C2541; /* Ali */
-    font-size: 16px;
-    margin-bottom: 22px;
-}
 
 /* عداد الغطاء */
 .gce-soon-countdown {
@@ -1209,21 +1211,31 @@ backdrop-filter: blur(12px);
     border-radius: 15px;
 
     background: #0B132B;
-    border: 1px solid #00D8F6;
-    box-shadow: 0 4px 14px rgba(0, 216, 246, 0.2); /* إضافة ظلال نيون خفيفة لتبرز الصناديق */
+    border: 1px solid #25E5EB;
+    box-shadow: 0 4px 14px rgba(37, 229, 235, 0.2);
+}
+
+/* لمسة برتقالي على "الثواني" فقط - كل ألوان اللوغو تظهر بمكان واحد */
+.gce-soon-countdown div:last-child {
+    border: 1px solid #FF8A00;
+    box-shadow: 0 4px 14px rgba(255, 138, 0, 0.25);
 }
 
 /* أرقام العداد */
 .gce-soon-countdown strong {
     display: block;
-    color: #00D8F6; /* سماوي تركواز مشرق ليبرز الرقم تماماً */
+    color: #25E5EB;
     font-size: 24px;
     font-weight: bold;
 }
 
+.gce-soon-countdown div:last-child strong {
+    color: #FF8A00;
+}
+
 /* نصوص الوقت (Days, Hours...) */
 .gce-soon-countdown small {
-    color: #F4F5F8; /* أبيض مائل للرمادي الفاتح ليصبح واضحاً ومقروءاً */
+    color: #F2F4F7;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1258,25 +1270,21 @@ backdrop-filter: blur(12px);
     overflow: hidden;
 }
 
-/* قبل موعد الإيفنت: اخفي كل محتوى المشاركين */
 #page3.coming-mode > :not(.gce-coming-cover) {
     display: none;
 }
 
-/* الغطاء يملأ المساحة الصغيرة */
 #page3.coming-mode .gce-coming-cover {
     position: absolute;
     inset: 0;
 }
 
-/* بعد الإيفنت: رجّع page3 طبيعي */
 #page3.event-started {
     height: auto;
     min-height: auto;
     overflow: visible;
     padding: 100px 0;
 }
-
 @media (max-width: 600px) {
     #page3.coming-mode {
         min-height: 420px;

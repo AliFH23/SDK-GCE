@@ -27,7 +27,7 @@ function showSectionFun(sectionId) {
 // countdown
 // التاريخ المستهدف
 // تعديل ساعة المعرض
-const eventDate = new Date("2026-09-17T10:00:00").getTime()
+const eventDate = new Date("2026-09-30T10:00:00").getTime()
 // يحسب الوقت الحالي وموعد الحدث
 const timer = setInterval(() => {
   const now = new Date().getTime()
@@ -138,3 +138,19 @@ function updateGceComingSoonCover() {
 
 const gceCoverTimer = setInterval(updateGceComingSoonCover, 1000);
 updateGceComingSoonCover();
+
+
+// =========================
+// تذكر إذا المستخدم دخل الموقع قبل (عشان زر home ما يرجعه لصفحة landing)
+// =========================
+if (sessionStorage.getItem("enteredGCE") === "true") {
+    document.getElementById("landing").classList.add("hidden");
+}
+document.getElementById("enter-btn").addEventListener("click", function(){
+    sessionStorage.setItem("enteredGCE", "true");
+});
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+        sessionStorage.setItem("enteredGCE", "true");
+    }
+});

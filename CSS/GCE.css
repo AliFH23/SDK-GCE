@@ -1,6 +1,6 @@
 body
 {
-    background-color: #f8f8fd;
+    background-color: #F2F4F7;
     box-sizing: border-box;
     margin: 0px;
 
@@ -29,7 +29,7 @@ body
 {
     width: 557px;
     height: 204px;
-    color: #1c1d3a;
+    color: #0B132B;
     font-size: 56px;
     font-family: Inter, sans-serif;
     font-weight: bold;
@@ -37,7 +37,7 @@ body
 
 #gridone-header span
 {
-    color: rgb(188, 6, 126);;
+    color: #FF8A00;
 }
 
 
@@ -55,7 +55,7 @@ body
 {
     width: 271px;
     height: 36px;
-    background: linear-gradient(90deg, #b81c88, #2babe2);
+    background: linear-gradient(90deg, #1E3ABA, #25E5EB);
     color: white;
     font-size: 13px;
     padding: 8px 14px;
@@ -70,7 +70,7 @@ body
 
     width: 131px;
     height: 36px;
-    background: linear-gradient(90deg, #b81c88, #2babe2);
+    background: linear-gradient(90deg, #1E3ABA, #25E5EB);
     margin-bottom: 50px;
     color: white;
     font-size: 13px;
@@ -132,7 +132,7 @@ body
 {
     width: 130px;
     height: 93px;
-    background: #f8f8fd;
+    background: #F2F4F7;
     border: 1px solid #ddd;
     border-radius: 14px;
     padding: 14px;
@@ -144,7 +144,7 @@ body
 
     width: 434px;
     height: 93px;
-    background: #f8f8fd;
+    background: #F2F4F7;
     border: 1px solid #ddd;
     border-radius: 14px;
     padding: 14px;
@@ -156,7 +156,7 @@ body
 
     font-size: 26px;
     font-weight: 700;
-    color: rgb(188, 6, 126);
+    color: #1E3ABA;
 }
 
 .static-domain p
@@ -171,7 +171,7 @@ body
 {
     width: 100px;
     height: 44px;
-    color: rgb(188, 6, 126);
+    color: #1E3ABA;
     font-size: 28px;
     font-weight: 700;
 }
@@ -202,7 +202,7 @@ body
 #title-achevment h3
 {
 
-color: #1c1d3a;
+color: #0B132B;
 font-size: 32px;
 font-family: Inter, sans-serif;
 font-weight: 600;
@@ -227,7 +227,7 @@ font-weight: 600;
 .gce-year
 {
     width: 90px;
-    background: linear-gradient(90deg, #b81c88, #2babe2);
+    background: linear-gradient(90deg, #1E3ABA, #25E5EB);
     color: white;
     font-size: 13px;
     padding: 5px 14px;
@@ -239,7 +239,7 @@ font-weight: 600;
 
 
 /*
-#3238ca
+#1E3ABA
 */
 
 #grid-2023
@@ -255,7 +255,7 @@ font-weight: 600;
 {
     width: 513px;
     background: #fff;
-    border: 2px solid  rgb(188, 6, 126);
+    border: 2px solid  #1E3ABA;
     border-radius:18px;
     padding: 22px;
     box-shadow:  0 8px 24px rgba(0, 0, 0, .08);
@@ -266,7 +266,7 @@ font-weight: 600;
 
 .pre-project h3
 {
-    color: #3238ca;
+    color: #1E3ABA;
 }
 
 .pre-project p
@@ -281,8 +281,8 @@ font-weight: 600;
     font-size: 12px;
     padding: 6px 10px;
     border-radius: 999px;
-    border: 1px solid rgb(188, 6, 126);
-    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
+    border: 1px solid #1E3ABA;
+    background: linear-gradient(90deg, #1E3ABA, #25E5EB);
     color: white
 
 }
@@ -290,8 +290,8 @@ font-weight: 600;
 
 .skill-badge span:hover 
 {
-    border: 1px solid #2babe2;
-    background: #2babe2;
+    border: 1px solid #25E5EB;
+    background: #25E5EB;
     color: white;
 }
 
@@ -311,7 +311,7 @@ font-weight: 600;
     display: flex;
     flex-direction: column;
     background: #fff;
-    border: 2px solid rgb(188, 6, 126);
+    border: 2px solid #1E3ABA;
     border-radius: 18px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
     padding: 22px;
@@ -332,7 +332,7 @@ color: #555a7b;
     margin-left: 360px;
     margin-top: 200px;
     background: #fff;
-    border: 8px solid rgb(188, 6, 126);
+    border: 8px solid #1E3ABA;
     border-radius: 18px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
     padding: 6px;
@@ -368,7 +368,7 @@ color: #555a7b;
 #leftArrow
 {
 
-    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
+    background: linear-gradient(90deg, #1E3ABA, #25E5EB);
     border: none;
     border-radius: 50%;
     padding: 10px;
@@ -389,7 +389,7 @@ color: #555a7b;
 {
 
 
-    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
+    background: linear-gradient(90deg, #1E3ABA, #25E5EB);
     border: none;
     border-radius: 50%;
     padding: 10px;
@@ -422,7 +422,7 @@ margin-top: 220px;
 #line
 {
 
-border-top:solid 5px rgb(188, 6, 126);
+border-top:solid 5px #1E3ABA;
 width: 80px;
 position: relative;
 left: 200px;
@@ -453,7 +453,7 @@ border-radius: 20px;
 .bg-profile
 {
 
-background-color: #2babe2;
+background-color: #25E5EB;
 border-radius: 50%;
 width: 38px;
 height: 48px;
@@ -492,7 +492,7 @@ left: 10px;
 {
     display: flex;
     flex-direction: column;
-    background-color: rgb(188, 6, 126);
+    background-color: #1E3ABA;
     gap: 30PX;
     padding: 25px;
 
@@ -527,7 +527,7 @@ left: 10px;
 #left-arrow
 {
     display: flex;
-    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
+    background: linear-gradient(90deg, #1E3ABA, #25E5EB);
     border-radius: 50%;
     color: white;
     padding: 10px;
@@ -545,7 +545,7 @@ left: 10px;
 #right-arrow
 {
     display: flex;
-    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
+    background: linear-gradient(90deg, #1E3ABA, #25E5EB);
     border-radius: 50%;
     color: white;
     padding: 10px;
@@ -572,7 +572,7 @@ left: 10px;
 
 
 .part1-card{
-  background: linear-gradient(135deg, #b81c88, #2babe2);
+  background: linear-gradient(135deg, #1E3ABA, #25E5EB);
   background-size: 200% 200%;
   transition: background-position .6s ease;
 }
@@ -606,7 +606,7 @@ left: 10px;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0,0,0,.12);
-  border: 8px solid rgb(188, 6, 126);
+  border: 8px solid #1E3ABA;
   background: #fff;
 }
 
@@ -627,7 +627,7 @@ left: 10px;
 .hero-badge{
   position: absolute;
   left: 24px; top: 24px;
-  background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
+  background: linear-gradient(90deg, #1E3ABA, #25E5EB);
   color:#fff; font-weight:700; font-size:14px;
   padding:6px 14px; border-radius:999px; 
   box-shadow: 0 6px 16px rgba(0,0,0,.18);
@@ -642,7 +642,7 @@ left: 10px;
   padding: 10px;
   background: #fff;
   border-radius: 14px;
-  border: 3px solid #e9e9ff;
+  border: 3px solid #E1E7F8;
   box-shadow: 0 10px 24px rgba(0,0,0,.12);
   max-height: calc(100% - 40px);
   width: 176px;
@@ -656,7 +656,7 @@ left: 10px;
 }
 .thumb:hover{ transform: translateY(-2px); filter: brightness(1.03); }
 .thumb.active{
-  border-color: rgb(188, 6, 126);
+  border-color: #1E3ABA;
   box-shadow: 0 6px 16px rgba(0,0,0,.18);
 }
 
@@ -666,7 +666,7 @@ left: 10px;
   width: 42px; height: 42px; border-radius: 50%;
   border: none; cursor: pointer; font-size: 18px;
   color: #fff;
-  background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
+  background: linear-gradient(90deg, #1E3ABA, #25E5EB);
   box-shadow: 0 8px 18px rgba(0,0,0,.18);
   display: grid; place-items: center;
   transition: transform .18s ease, filter .18s ease;
@@ -682,7 +682,7 @@ left: 10px;
   background-size: contain !important;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f8f8fd; /* backdrop behind letterbox bars */
+  background-color: #F2F4F7; /* backdrop behind letterbox bars */
 }
 
 .reels a
@@ -710,7 +710,7 @@ left: 10px;
 
 .reels
 {
-    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
+    background: linear-gradient(90deg, #1E3ABA, #25E5EB);
     display: flex;
     align-items: center;
     gap: 0px;
@@ -979,9 +979,9 @@ width: 80px;
   .thumb{ width: 100%; height: 64px; }
 
   /* Chevrons sit just above the thumb strip */
-  .chev{ bottom: 130px; }
-  .chev.prev{ left: 12px; }
-  .chev.next{ left: 60px; }
+  .chev{ bottom: 145px; }
+  .chev.prev{ left: 18px; }
+  .chev.next{ left: 72px; }
 
   #maingrid-header
 {
@@ -1261,7 +1261,7 @@ width: 80px;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0,0,0,.12);
-  border: 8px solid rgb(188, 6, 126);
+  border: 8px solid #1E3ABA;
   background: #fff;
 }
 .hero-bg{
@@ -1270,7 +1270,7 @@ width: 80px;
   background-size: contain;         /* keeps full photo visible */
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f8f8fd;        /* letterbox backdrop */
+  background-color: #F2F4F7;        /* letterbox backdrop */
 }
 .hero-overlay{
   position: absolute; inset: 0;
@@ -1278,7 +1278,7 @@ width: 80px;
 }
 .hero-badge{
   position: absolute; left: 24px; top: 24px;
-  background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
+  background: linear-gradient(90deg, #1E3ABA, #25E5EB);
   color:#fff; font-weight:700; font-size:14px;
   padding:6px 14px; border-radius:999px; 
   box-shadow: 0 6px 16px rgba(0,0,0,.18);
@@ -1288,7 +1288,7 @@ width: 80px;
 .thumb-rail{
   position: absolute; right: 20px; bottom: 20px;
   display: grid; gap: 10px; padding: 10px;
-  background: #fff; border-radius: 14px; border: 3px solid #e9e9ff;
+  background: #fff; border-radius: 14px; border: 3px solid #E1E7F8;
   box-shadow: 0 10px 24px rgba(0,0,0,.12);
   max-height: calc(100% - 40px);
   width: 176px; overflow: auto;
@@ -1300,14 +1300,14 @@ width: 80px;
   transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease, filter .22s ease;
 }
 .thumb:hover{ transform: translateY(-2px); filter: brightness(1.03); }
-.thumb.active{ border-color: rgb(188, 6, 126); box-shadow: 0 6px 16px rgba(0,0,0,.18); }
+.thumb.active{ border-color: #1E3ABA; box-shadow: 0 6px 16px rgba(0,0,0,.18); }
 
 /* Bottom chevrons */
 .chev{
   position: absolute; bottom: 20px;
   width: 42px; height: 42px; border-radius: 50%;
   border: none; cursor: pointer; font-size: 18px; color: #fff;
-  background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
+  background: linear-gradient(90deg, #1E3ABA, #25E5EB);
   box-shadow: 0 8px 18px rgba(0,0,0,.18);
   display: grid; place-items: center;
   transition: transform .18s ease, filter .18s ease;
