@@ -411,6 +411,10 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 /* الأجهزة اللوحية */
 @media (max-width: 992px) {
