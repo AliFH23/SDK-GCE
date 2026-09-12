@@ -618,9 +618,10 @@ body {
     #nav img {
         width: 80px;
     }
-    #page-e img {
-        max-width: 300px;
-        height: 200px;
+    #page-e-left img {
+        width: 180px;
+        max-width: 80%;
+        height: auto;
     }
     #page-e {
         grid-template-columns: 1fr;
