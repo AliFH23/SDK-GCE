@@ -409,7 +409,10 @@ body {
     margin: 6px 0 0;
 }
 
-
+#page3 .card-1 h3 {
+    color: #bc057c;
+    background: rgba(188, 5, 124, 0.08);
+}
 .card-1 p {
     font-weight: bold;
     color: #0B132B;
