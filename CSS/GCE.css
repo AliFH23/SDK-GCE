@@ -1545,8 +1545,3 @@ html, body { overflow-x: hidden; }
 }
 
 
-/* ===== لون اسم المشروع في 2025 ===== */
-#page3 .card-1 h3 {
-    color: #bc057c !important;
-    background: rgba(188, 5, 124, 0.08) !important;
-}
